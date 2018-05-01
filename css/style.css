@@ -1,0 +1,198 @@
+body 
+{ margin: 0 auto;
+  font-family: "Century Gothic"; }
+
+.color-primary-dark
+{ color: rgba(48, 44, 58, 0.8); }
+
+/** NAVBAR **/
+.navbar 
+{ list-style: none;
+  color: #bebac9;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 0;
+  margin: 3vh 10vw 0 10vw; }
+
+.navbar-collapse 
+{ border: 0px; }
+
+.navbar-toggle 
+{ border: 0px;
+  background-color: #fff !important; }
+
+.navbar-toggle:hover 
+{ background-color: #fff !important; }
+
+.icon-bar 
+{ background-color: rgba(0,0,0,0.5) !important; }
+
+.navbar li a 
+{ font-size: 19px;
+  color: rgba(0, 0, 0, 0.5) !important }
+
+.navbar li a:hover 
+{ color: #bebac9 !important }
+
+/** BANNER **/
+
+.header-image 
+{ background-image: url("../assets/header_style.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh; }
+
+/** SECIONS (GENERAL) **/
+
+.section h2 
+{ text-align: center;
+  font-family: 'Sofia';
+  font-size: 40px; }
+
+.section2 
+{ background-color: rgba(214, 211, 222, 0.5); }
+
+
+/** ABOUT ME **/
+/* 992px */
+
+.about-desc 
+{ text-align: right; }
+
+.about-main
+{ padding: 5vh 0; 
+  margin: 0 auto; }
+
+.about-main p
+{ text-align: center; 
+  padding: 0 10vw; }
+
+.about-tabs 
+{ margin: 0 auto; 
+  padding-bottom: 5vh;}
+
+.about-tabs img
+{ margin-right: 10px; }
+
+.about-tabs .col-md-4
+{ border-right: 3px solid #bebac9 }
+
+.about-tabs .nav-pills .active a
+{ background-color: rgba(121, 112, 143, 0.2); 
+  color: #79708f; }
+
+.about-tabs .nav-pills .active a:focus
+{ background-color: rgba(121, 112, 143, 0.2); 
+  color: #79708f; }
+
+.about-tabs .nav-pills a:hover
+{ background-color: rgba(121, 112, 143, 0.1); 
+  color: #79708f; }
+
+.about-tabs a
+{ color: #79708f; }
+
+.about-tabs .col-md-8
+{ padding: 2vh 0 0 3vh; }
+
+
+
+/** PROJECTS **/
+
+.prj-main
+{ background-color: rgba(174, 168, 189,0.9);
+  color: rgba(255,255,255,0.8); 
+  font-family: 'Century Gothic';
+  padding: 10vh 0 5vh 0; }
+
+.prj-main li
+{ display: block; }
+
+.prj-main .header1
+{ font-size: 40px; }
+
+.prj-main .header2
+{ font-size: 32px; }
+
+.prj-main h2
+{ text-align: left; }
+
+.prj-lists
+{ padding: 5vh; }
+
+.prj-box
+{ margin: 5vh 0; }
+
+.prj-links
+{ width: 10%;
+  background-color: rgba(48, 44, 58, 0.8);
+  color: #fff;
+  text-align: center; }
+
+.prj-links img
+{ width: 60%; }
+
+.prj-image
+{ background-position: center;
+  background-size: cover; }
+
+.prj-desc
+{ padding: 5vh 2.5vh; }
+
+.prj-desc1 
+{ width: 60%; }
+
+.prj-image1
+{ width: 30%;
+  background-image: url(../assets/projects/heprotech.JPG); }
+
+.prj-desc2 
+{ width: 70%;
+  text-align: center; }
+
+.prj-image2
+{ width: 30%;
+  background-image: url(../assets/projects/heprotech.JPG);
+  position: }
+
+.prj-box 
+{ box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.1);
+  background-color: #fff; }
+
+/** CONTACT **/
+#contact
+{ height: 30vh;
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  background-color: rgba(48, 44, 58, 0.8); }
+
+#contact li
+{ list-style: none;
+  display: inline; 
+  padding: 0 3vh 0 0;}
+
+.links 
+{ padding: 5vh 10vh 0 10vh; }
+
+.links .icons
+{ padding: 3vh 0; }
+
+.links img
+{ height: 24px; }
+
+footer 
+{ bottom: 0;}
+
+/**********/
+.border1 
+{ height: 10px;
+  width: 10vw;
+  background-color: #bebac9;
+  margin: 0 auto; }
+
+.border2
+{ height: 5px;
+  width: 7vw;
+  background-color: #bebac9;
+  margin: 10px auto; }
