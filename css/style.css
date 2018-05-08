@@ -101,7 +101,9 @@ body
 /** PROJECTS **/
 
 .prj-main
-{ background-color: rgba(174, 168, 189,0.9);
+{ background-image: url(../assets/dark-banner.jpg);
+  background-position: center;
+  background-size: cover;
   color: rgba(255,255,255,0.8); 
   font-family: 'Century Gothic';
   padding: 10vh 0 5vh 0; }
@@ -145,7 +147,8 @@ body
 
 .prj-image1
 { width: 30%;
-  background-image: url(../assets/projects/heprotech.JPG); }
+  background-image: url(../assets/projects/hotspot.JPG); 
+  background-position: right; }
 
 .prj-desc2 
 { width: 70%;
@@ -154,7 +157,12 @@ body
 .prj-image2
 { width: 30%;
   background-image: url(../assets/projects/heprotech.JPG);
-  position: }
+  background-position: left; }
+
+.prj-image3
+{ width: 30%;
+  background-image: url(../assets/projects/digiexpress.jpg);
+  background-position: left; }
 
 .prj-box 
 { box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.1);
@@ -182,7 +190,38 @@ body
 { height: 24px; }
 
 footer 
-{ bottom: 0;}
+{ bottom: 0; }
+
+/** DAILY **/
+#daily p
+{ text-align: center; }
+
+.instagram li 
+{ display: inline-block; }
+
+.instagram-posts 
+{ padding: 5vh 0 5vh 0; }
+
+.instagram-posts h3
+{ font-family: 'Sofia'; 
+  text-align: center; 
+  padding-bottom: 2vh; }
+
+.instagram ul 
+{ margin: 0 auto;
+ text-align: center; }
+
+.insta-images 
+{ height: 12vw;
+  width: 12vw;
+  padding: 5vh; 
+  position: relative}
+
+.insta-images img
+{ width: 30%;
+  top: 30%;
+  left: 35%;
+  position: absolute}
 
 /**********/
 .border1 
@@ -196,3 +235,10 @@ footer
   width: 7vw;
   background-color: #bebac9;
   margin: 10px auto; }
+
+.visible-image
+{ visibility: visible; }
+
+.hidden-image
+{ display: none; 
+  width: 90%;}
