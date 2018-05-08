@@ -6,6 +6,9 @@ body
 { color: rgba(48, 44, 58, 0.8); }
 
 /** NAVBAR **/
+#navbar
+{ opacity: 0 }
+
 .navbar 
 { list-style: none;
   color: #bebac9;
@@ -37,11 +40,17 @@ body
 /** BANNER **/
 
 .header-image 
-{ background-image: url("../assets/header_style.jpg");
-  background-size: cover;
+{ background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 60vh; }
+
+#header-image
+{ background-image: url("../assets/header_blank.jpg"); 
+  transition: 0.5s; }
+
+#header-image:hover
+{ background-image: url("../assets/header_style.jpg")}
 
 /** SECIONS (GENERAL) **/
 
@@ -264,3 +273,6 @@ footer
 .hidden-image
 { display: none; 
   width: 90%;}
+
+.hide-element
+{ opacity: 0;}

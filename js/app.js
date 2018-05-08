@@ -1,6 +1,26 @@
 $(document).ready(function(){
-    $("#header-image").fadeIn("5000");
-    
+    $("#header-image").mouseover(function(){
+		$(this).css(
+		'background-image', 
+		'url(\"../assets/header_style.jpg\")');
+	});
+	
+	$("a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+			});
+		}
+	});
+	
+	$("#navbar").animate({
+		'opacity' : 1
+	}, 1000);
+
     var insta_images = [
        "#insta-image1",
        "#insta-image2",
@@ -27,5 +47,22 @@ $(document).ready(function(){
             $(this).css("opacity", 1);
             $(insta_links[im]).addClass("hidden");
         });
+    });
+	
+	$(window).scroll( function(){
+    
+        $('.hide-element').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({
+					'opacity':'1'			
+				}, 500);
+            }
+            
+        }); 
+    
     });
 });

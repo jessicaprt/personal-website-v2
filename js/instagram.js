@@ -15,8 +15,6 @@ function loadImages() {
                 post_link +
                 "\" target=\"__blank\"><img id=\"" + insta_id + "\" class=\"hidden\" src=\"assets/icons/instagram.png\"></a>";
             
-            console.log(href);
-            
             posts.push({
                 key: image_url,
                 value: post_link
@@ -37,7 +35,5 @@ function loadImages() {
 }
 
 loadImages();
-
-console.log(posts);
 
 window.addEventListener
