@@ -244,15 +244,21 @@ footer
 
 /** DAILY **/
 .blogs 
-{ text-align: center;
-  padding: 5vh 0;}
+{ text-align: center; }
+
+.daily-header
+{ padding: 7vh 0;
+  background-image: url(../assets/daily-image.jpg);
+  background-size: cover;
+  background-position: center; 
+  color: #fff;}
 
 .blogs row
 { margin: 0 auto; }
 
 #daily
 { text-align: center; 
-  padding: 7vh 0; }
+  padding: 0 0 7vh 0; }
 
 .featuredblogs li
 { list-style: none; 
