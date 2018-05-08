@@ -16,10 +16,6 @@ $(document).ready(function(){
 			});
 		}
 	});
-	
-	$("#navbar").animate({
-		'opacity' : 1
-	}, 1000);
 
     var insta_images = [
        "#insta-image1",
@@ -50,6 +46,16 @@ $(document).ready(function(){
     });
 	
 	$(window).scroll( function(){
+		
+//		$('#about-me').each( function(j) {
+//			var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+//            var bottom_of_window = $(window).scrollTop() + $(window).height();
+//            if( 100 + bottom_of_window > bottom_of_object ){
+//                $('nav').addClass("navbar-fixed-top");
+//            } else {
+//				$('nav').removeClass("navbar-fixed-top");
+//			}
+//		});
     
         $('.hide-element').each( function(i){
             
@@ -60,9 +66,18 @@ $(document).ready(function(){
                 $(this).animate({
 					'opacity':'1'			
 				}, 500);
+				
+				$(this).removeClass("hide-element");
             }
-            
         }); 
     
     });
+});
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
 });
