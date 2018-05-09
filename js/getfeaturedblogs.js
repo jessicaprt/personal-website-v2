@@ -16,10 +16,10 @@ function renderFeaturedBlogs(blogs) {
 	
 	$.each(blog_ids, function(i) {
 		if (i <= blog_size-i) {
-			var renderTitle = "<h4><strong><a href=\"blogs/" + blogs[i]["url"] + "\">"+ blogs[i]["title"] + "</a></strong></h4>";
+			var renderTitle = "<h4><strong><a href=\"blogs/" + blogs[i]["url"] + ".html\">"+ blogs[i]["title"] + "</a></strong></h4>";
 			var renderDate = "<p>Created at: " + blogs[i]["created_at"] + "</p>";
 			var content = blogs[i]["html_content"].join(" ");
-			var renderContent = "<p>" + content.substring(0,240)+ "<a href=\"blogs/" + blogs[i]["url"] + "\">...Read More</a></p>";
+			var renderContent = "<p>" + content.substring(0,240)+ "<a href=\"blogs/" + blogs[i]["url"] + ".html\">...Read More</a></p>";
 			
 			$(blog_ids[i]).html(
 				renderTitle + 

@@ -334,3 +334,25 @@ footer
 
 .hide-element
 { opacity: 0;}
+
+/** BLOGS **/
+.blog-main
+{ padding: 5vh 0; 
+  color: #000; }
+
+.blog-main #blog-title
+{ text-align: center; 
+  font-family: 'Sofia'; 
+  font-size: 4vh; 
+  padding-bottom: 4vh; }
+
+.blog-main #blog-date
+{ color: #777; }
+
+.blog-main #blog-contents
+{ padding-bottom: 5vh; 
+  text-indent: 5vw;}
+
+.blog-main #blog-tags
+{ color: #777; }
+
