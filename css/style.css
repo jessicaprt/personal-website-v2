@@ -85,7 +85,7 @@ nav.navbar.shrink
   height: 60vh; }
 
 #header-image
-{ background-image: url("../assets/header_blank.jpg"); 
+{ background-image: url("../assets/header_style.jpg"); 
   transition: 0.5s; }
 
 #header-image:hover
