@@ -1,6 +1,9 @@
 body 
 { margin: 8vh auto 0 auto;
-  font-family: "Century Gothic"; }
+  font-family: 'Roboto'; }
+
+p
+{ font-size: 1.8vh; }
 
 nav
 { width: 100%;
