@@ -140,7 +140,7 @@ nav.navbar.shrink
 
 /** PROJECTS **/
 #projects
-{ text-align: center }
+{ text-align: left }
 
 .prj-main
 { background-image: url(../assets/dark-banner.jpg);
@@ -151,7 +151,8 @@ nav.navbar.shrink
   padding: 10vh 0 5vh 0; }
 
 .more
-{ padding: 2vh 0 5vh 0; }
+{ padding: 2vh 0 5vh 0; 
+  text-align: center }
 
 .more a
 { text-decoration: none; 

@@ -6,7 +6,9 @@ $(document).ready(function(){
 	});
 	
 	$("a").on('click', function(event) {
-		if (this.hash !== "") {
+		var valid_hashes = ["#about-me", "#projects", "#daily"];
+		if (jQuery.inArray(this.hash, valid_hashes) != -1) {
+			console.log(this.hash);
 			event.preventDefault();
 			var hash = this.hash;
 			$('html, body').animate({
@@ -46,16 +48,6 @@ $(document).ready(function(){
     });
 	
 	$(window).scroll( function(){
-		
-//		$('#about-me').each( function(j) {
-//			var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-//            var bottom_of_window = $(window).scrollTop() + $(window).height();
-//            if( 100 + bottom_of_window > bottom_of_object ){
-//                $('nav').addClass("navbar-fixed-top");
-//            } else {
-//				$('nav').removeClass("navbar-fixed-top");
-//			}
-//		});
     
         $('.hide-element').each( function(i){
             
