@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var url = $("#url").html();
 	console.log(url);
 	$.ajax(
-		{url: "../blogs/blogs.json", 
+		{url: "../blog-generator/blogs.json", 
 			success: function(result){
 				blogs = result.blogs;
 				
@@ -11,8 +11,10 @@ $(document).ready(function(){
 						var created = "created on: " + blogs[i]["created_at"];
 						var contents = blogs[i]["html_content"];
 						var tags = blogs[i]["tags"];
+						var blogImage = "<img src=\"images/" + blogs[i]["blog_image"] + "\">";
 						$("#blog-title").html(blogs[i]["title"]);
 						$("#blog-date").html(created);
+						$("#blog-image").html(blogImage);
 						
 						$.each(contents, function(j) {
 							var curr_content = "<p>" + contents[j] + "</p>";

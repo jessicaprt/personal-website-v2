@@ -343,11 +343,11 @@ footer
 .blog-main #blog-title
 { text-align: center; 
   font-family: 'Sofia'; 
-  font-size: 4vh; 
-  padding-bottom: 4vh; }
+  font-size: 4vh; }
 
 .blog-main #blog-date
-{ color: #777; }
+{ color: #777; 
+  text-align: center}
 
 .blog-main #blog-contents
 { padding-bottom: 5vh; 
@@ -355,4 +355,11 @@ footer
 
 .blog-main #blog-tags
 { color: #777; }
+
+.blog-main #blog-image
+{ text-align: center; 
+  padding: 5vh 0; }
+
+.blog-main #blog-image img
+{ width: 60% }
 
