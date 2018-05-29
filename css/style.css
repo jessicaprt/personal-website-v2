@@ -8,9 +8,9 @@ h4 { font-size: 2vh; }
 
 h3 { font-size: 2.3vh; }
 
-h2 { font-size: 2.4vh; }
+h2 { font-size: 2.8vh !important }
 
-h1 { font-size: 2.6vh; }
+h1 { font-size: 4vh !important }
 
 nav
 { width: 100%;
@@ -93,10 +93,9 @@ nav.navbar.shrink
 
 /** SECIONS (GENERAL) **/
 
-.section h2 
+.section h2, h1
 { text-align: center;
-  font-family: 'Sofia';
-  font-size: 40px; }
+  font-family: 'Sofia'; }
 
 .section2 
 { background-color: rgba(214, 211, 222, 0.5); }
@@ -155,8 +154,9 @@ nav.navbar.shrink
   background-position: center;
   background-size: cover;
   color: rgba(255,255,255,0.8); 
-  font-family: 'Century Gothic';
-  padding: 10vh 0 5vh 0; }
+  font-family: 'Sofia';
+  font-size: 4em;
+  padding: 3vh 0 3vh 4vh; }
 
 .more
 { padding: 2vh 0 5vh 0; 
@@ -172,17 +172,18 @@ nav.navbar.shrink
 .prj-main li
 { display: block; }
 
-.prj-main .header1
-{ font-size: 40px; }
-
-.prj-main .header2
-{ font-size: 32px; }
-
 .prj-main h2
 { text-align: left; }
 
 .prj-lists
 { padding: 5vh 5vh 0 5vh; }
+
+.prj-lists .container
+{ margin: 0 auto; }
+
+.prj-lists .box
+{ border: 8px solid rgba(48, 44, 58, 0.3); 
+  padding: 0 5vh; }
 
 .prj-box
 { margin: 5vh 0; }
@@ -267,6 +268,10 @@ footer
 
 .blogs row
 { margin: 0 auto; }
+
+.daily-titles
+{ padding: 2vh;
+  font-size: 2.4vh}
 
 #daily
 { text-align: center; 
