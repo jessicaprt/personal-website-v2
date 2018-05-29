@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax(
-		{url: "../blogs/blogs.json", 
+		{url: "../blog-generator/blogs.json", 
 			success: function(result){
 				renderFeaturedBlogs(result.blogs);
 			}
@@ -15,8 +15,9 @@ function renderFeaturedBlogs(blogs) {
 				   "#featuredblog3"];
 	
 	$.each(blog_ids, function(i) {
-		if (i <= blog_size) {
-			var idx = blog_size-i-1;
+		if (i < blog_size) {
+			console.log(i);
+			var idx = blog_size-i - 1;
 			console.log(idx)
 			var renderTitle = "<h4><strong><a href=\"blogs/" + blogs[idx]["url"] + ".html\">"+ blogs[idx]["title"] + "</a></strong></h4>";
 			var renderDate = "<p>Created at: " + blogs[idx]["created_at"] + "</p>";
@@ -28,7 +29,8 @@ function renderFeaturedBlogs(blogs) {
 				renderDate + 
 				renderContent);
 		} else {
-			$(blog_ids[i]).addClass("hidden");
+			console.log("hiding")
+		$(blog_ids[i]).addClass("hidden-content");
 		}
 	})
 }

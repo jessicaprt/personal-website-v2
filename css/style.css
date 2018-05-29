@@ -330,10 +330,13 @@ footer
 
 .hidden-image
 { display: none; 
-  width: 90%;}
+  width: 90%; }
 
 .hide-element
-{ opacity: 0;}
+{ opacity: 0; }
+
+.hidden-content
+{ display: none !important; }
 
 /** BLOGS **/
 .blog-main
