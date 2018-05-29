@@ -1,17 +1,4 @@
-import os
-import json
 
-def get_data():
-    with open('blogs.json') as f:
-        return json.load(f)
-
-def is_blog_page(url):
-    url_page = "{0}.html".format(url)
-    print("checking %s" % url_page)
-    return os.path.isfile(url)
-
-def generate_blog(blog_url):
-    html_template = """
         <!DOCTYPE html>
         <head>
         <meta charset="utf-8">
@@ -50,31 +37,15 @@ def generate_blog(blog_url):
         </nav>
         <script type="text/javascript" src="../js/renderblog.js"></script>
         <div class="blog-main container">
-        <p class="hidden" id="url">{0}</p>
+        <p class="hidden" id="url">test-blog</p>
         <h1 id="blog-title"></h1>
         <div class="border2"></div>
         <p id="blog-date"></p>
         <div id="blog-contents"></div>
         <p id="blog-tags">Tags: </p>
+        </div>
         <div>
         <p id="previous-blog">previous blog: </p>
         </div>
-				</div>
         </body>
-    """.format(blog_url)
-
-    new_page_file = "%s.html" % blog_url
-
-    new_page = open(new_page_file,"w") 
-    new_page.write(html_template) 
-    new_page.close()
-
-if __name__ == "__main__":
     
-    json_data = get_data()
-    blogs = json_data["blogs"]
-    for blog in blogs:
-        if is_blog_page(blog["url"]):
-            pass
-        else:
-            generate_blog(blog["url"])

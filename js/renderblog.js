@@ -18,13 +18,19 @@ $(document).ready(function(){
 							var curr_content = "<p>" + contents[j] + "</p>";
 							$("#blog-contents").append(curr_content);
 						})
-						$.each(tags, function(j) {
-							var curr_tag = tags[j];
-							$("#blog-tags").append("<a>" + curr_tag + "</a>");
-						})
+						
+						if (tags != null) {
+							$.each(tags, function(j) {
+								var curr_tag = tags[j];
+								$("#blog-tags").append("<a>" + curr_tag + "</a>");
+							});
+						} else {
+							$("#blog-tags").addClass("hidden");
+						}
 						
 						if ((i-1) >= 0) {
-							var prev = "<a href=\"" + blogs[i-1]["url"]; + ">" + blogs[i-1]["title"] + "</a>";
+							var prev = "<a href=\"" + blogs[i-1]["url"] + "\">" + blogs[i-1]["title"] + "</a>";
+							console.log(prev);
 							$("#previous-blog").append(prev);
 						} else {
 							$("#previous-blog").addClass("hidden");
