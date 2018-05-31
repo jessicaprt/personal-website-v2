@@ -31,7 +31,7 @@ $(document).ready(function(){
 						}
 						
 						if ((i-1) >= 0) {
-							var prev = "<a href=\"" + blogs[i-1]["url"] + "\">" + blogs[i-1]["title"] + "</a>";
+							var prev = "<a href=\"" + blogs[i-1]["url"] + ".html\">" + blogs[i-1]["title"] + "</a>";
 							console.log(prev);
 							$("#previous-blog").append(prev);
 						} else {
