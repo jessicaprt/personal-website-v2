@@ -3,13 +3,11 @@ from blogs import Blogs
 
 def create_json(url, blog_id):
     json_content = """
-    "id": {0},
     "url": "{1}",
     "blog_image": "",
     "tags" : [],
     "title" : "",
-    "body" : ""
-    """.format(blog_id, url)
+    "body" : []""".format(blog_id, url)
     template = "{\n" + json_content + "\n}"
     new_blog_json = "%s.json" % url
     new_file = open(new_blog_json, "w")

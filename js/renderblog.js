@@ -9,7 +9,7 @@ $(document).ready(function(){
 				$.each(blogs, function(i) {
 					if(blogs[i]["url"] == url) {
 						var created = "created on: " + blogs[i]["created_at"];
-						var contents = blogs[i]["html_content"];
+						var contents = blogs[i]["body"];
 						var tags = blogs[i]["tags"];
 						var blogImage = "<img src=\"images/" + blogs[i]["blog_image"] + "\">";
 						$("#blog-title").html(blogs[i]["title"]);

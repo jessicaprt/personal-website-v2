@@ -361,7 +361,7 @@ footer
 { padding-bottom: 5vh; 
   text-indent: 5vw;}
 
-.blog-main #blog-tags
+.blog-main #blog-tags, #previous-blog
 { color: #777; }
 
 .blog-main #blog-image
