@@ -3,9 +3,9 @@
 Below are the procedures on how to use the blog-generator to create a new blog
 
 ## Generating JSON file for Blog Content
-Generate the json file to put the blog contents. Run new-blog.py and add the url to your new blog. The link to your blog will now be **"http://example.com/blogs/\<new-blog>"**
+Generate the json file to put the blog contents. Run new-blog.py and add the url to your new blog.
 ```
-python new-blog.py new-blog
+> python new-blog.py new-blog
 ```
 
 This creates the file **new-blog.json**
@@ -31,3 +31,9 @@ The generated json file will look as follows:
 
 ## Creating the static blog page
 
+Once filling in the json is completed, the next step is to generate the html file for the blog page. To do so, run add-blog.py and add the same url to your blog. 
+```
+> python add-blog.py new-blog
+```
+
+The url to the new blog post will now be **"http://example.com/blogs/\<new-blog>"**
