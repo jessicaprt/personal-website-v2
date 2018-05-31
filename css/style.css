@@ -182,7 +182,7 @@ nav.navbar.shrink
 { margin: 0 auto; }
 
 .prj-lists .box
-{ border: 8px solid rgba(48, 44, 58, 0.3); 
+{ border: 6px solid rgba(255, 255, 255, 0.5); 
   padding: 0 5vh; }
 
 .prj-box
