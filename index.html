@@ -97,47 +97,67 @@
             </div>
         </ul>
         <div class="prj-lists container-fluid">
+			<script type="text/javascript" src="js/getfeaturedprojects.js"></script>
 			<div class="box">
 				<div class="row">
-					<div class="col-md-6">
-						<table class="prj-box hide-element">
-							<tr><td class="prj-links"><a href="https://github.com/hotspot-NWHacks2018/hotspot-app" target="__blank">
-									<img src="assets/icons/github-6-xxl.png"></a></td>
-								<td class="prj-image prj-image1"></td>
-								<td class="prj-desc prj-desc1">
-									<h4><strong>HotSpot</strong></h4>
-									<p>An Android application for automatically commecting to a Wi-Fi network by scanning a network name + key combination.</p>
-									<p>HotSpot was an official entry to NWHacks 2018 where we had 24 hours to complete the project.</p></td></tr></table>
-						<table class="prj-box hide-element">
-							<tr>
-								<td class="prj-desc prj-desc2">
-									<h4><strong>DigiExpress - A custom online computer store</strong></h4>
-									<p>This web app was build with ASP.NET deployed in Azure and uses Azure databases.</p>
-									<p>This is a mock-up store where a user can buy and choose the parts for a laptop/desktop computer. This web app includes a feature for having items in a cart as well as viewing order history.</p>
-									<div class="border2"></div>
-									<p><a href="#"><img src="assets/icons/github-logo.png"></a></p>
-								</td>
-								<td class="prj-image prj-image3"></td></tr></table>
+					<div class="col-md-4">
+						<canvas id="prj-1-can" width="150" height="80" class="prj-strings">
+						</canvas>
+						<div id="project1" class="prj-frames"></div>
+						
+						<div id="modal0" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" id="prjTitle0"></h4>
+									</div>
+									<div class="modal-body" id="prjContent0"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
-					<div class="col-md-6">
-						<table class="prj-box hide-element">
-							<tr>
-								<td class="prj-desc prj-desc2">
-									<h4><strong>Hepro-tech</strong></h4>
-									<p>a device for securing contents in a case where a user can enable "secure mode" and receives alerts via a notification on a monile phone if someone else comes close to the secure case.</p>
-									<p>Hepro-tech was an entry to CalgaryHacks where we had 24 hours to complete the project.</p>
-									<div class="border2"></div>
-									<p><a href="#"><img src="assets/icons/github-logo.png"></a></p>
-								</td>
-								<td class="prj-image prj-image2"></td></tr></table>
-	<!--
-						<table class="prj-box hide-element">
-							<tr><td class="prj-links"><a href="#">
-									<img src="assets/icons/github-6-xxl.png"></a></td>
-								<td class="prj-image prj-image1"></td>
-								<td class="prj-desc prj-desc1">
-									<h4><strong>Habit Manager</strong></h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td></tr></table>
-	-->
+					<div class="col-md-4">
+						<canvas id="prj-2-can" width="150" height="80" class="prj-strings">
+						</canvas>
+						<div id="project2" class="prj-frames"></div>
+						<div id="modal1" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" id="prjTitle1"></h4>
+									</div>
+									<div class="modal-body" id="prjContent1"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<canvas id="prj-3-can" width="150" height="80" class="prj-strings">
+						</canvas>
+						<div id="project3" class="prj-frames"></div>
+						<div id="modal2" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" id="prjTitle2"></h4>
+									</div>
+									<div class="modal-body" id="prjContent2"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

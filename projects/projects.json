@@ -1,0 +1,41 @@
+{
+	"projects" : 
+	[
+		{
+			"id" : 0,
+			"name" : "HotSpot",
+			"description" : "An Android application for automatically commecting to a Wi-Fi network by scanning a network name + key combination. HotSpot was an official entry to NWHacks 2018 where we had 24 hours to complete the project.",
+			"github_link" : "https://github.com/hotspot-NWHacks2018/hotspot-app",
+			"tags" : ["android", "java"],
+			"image_link" : "hotspot.jpg",
+			"featured_status" : "featured"
+		},
+		{
+			"id" : 1,
+			"name" : "DigiExpress - A custom online computer store",
+			"description" : "This web app was build with ASP.NET deployed in Azure and uses Azure databases. This is a mock-up store where a user can buy and choose the parts for a laptop/desktop computer. This web app includes a feature for having items in a cart as well as viewing order history.",
+			"github_link" : "",
+			"tags" : ["ASP.NET", "C#", "web"],
+			"image_link" : "digiexpress.jpg",
+			"featured_status" : "featured"
+		},
+		{
+			"id" : 2,
+			"name" : "Blog Generator",
+			"description" : "Blog Generator is a simple python script that converts a json file to a static web page.",
+			"github_link" : "",
+			"tags" : ["python", "web"],
+			"image_link" : "hotspot.jpg",
+			"featured_status" : "featured"
+		},
+		{
+			"id" : 3,
+			"name" : "HeproTech",
+			"description" : "a device for securing contents in a case where a user can enable \"secure mode\" and receives alerts via a notification on a monile phone if someone else comes close to the secure case. Hepro-tech was an entry to CalgaryHacks where we had 24 hours to complete the project.",
+			"github_link" : "heprotech.jpg",
+			"tags" : ["android", "hardware"],
+			"image_link" : "",
+			"featured_status" : null
+		}
+	]
+}

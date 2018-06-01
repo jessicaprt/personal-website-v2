@@ -17,7 +17,6 @@ function renderFeaturedBlogs(blogs) {
 	$.each(blog_ids, function(i) {
 		if (i < blog_size) {
 			var idx = blog_size-i - 1;
-			console.log(idx)
 			var renderTitle = "<h4><strong><a href=\"blogs/" + blogs[idx]["url"] + ".html\">"+ blogs[idx]["title"] + "</a></strong></h4>";
 			var renderDate = "<p>Created at: " + blogs[idx]["created_at"] + "</p>";
 			var content = blogs[idx]["body"].join(" ");
@@ -28,8 +27,7 @@ function renderFeaturedBlogs(blogs) {
 				renderDate + 
 				renderContent);
 		} else {
-			console.log("hiding")
-		$(blog_ids[i]).addClass("hidden-content");
+			$(blog_ids[i]).addClass("hidden-content");
 		}
 	})
 }

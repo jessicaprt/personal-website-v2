@@ -178,57 +178,37 @@ nav.navbar.shrink
 .prj-lists
 { padding: 5vh 5vh 0 5vh; }
 
-.prj-lists .container
-{ margin: 0 auto; }
+.prj-desc
+{ padding: 2vh 0; }
+
+.prj-frames
+{ position: relative;
+  margin-top: -15px; 
+  z-index: 1 }
+
+.prj-strings
+{ z-index: -1; }
+
+.prj-lists .col-md-4
+{ margin: 0 auto; 
+  text-align: center}
+
+.prj-image
+{ width: 60%;
+  border: 20px solid #eee;
+  margin: 0 auto; 
+  box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.2); }
 
 .prj-lists .box
 { border: 6px solid rgba(255, 255, 255, 0.5); 
-  padding: 0 5vh; }
+  padding: 5vh 5vh; }
 
-.prj-box
-{ margin: 5vh 0; }
-
-.prj-links
-{ width: 10%;
-  background-color: rgba(48, 44, 58, 0.8);
-  color: #fff;
-  text-align: center; }
-
-.prj-links img
-{ width: 60%; }
-
-.prj-image
-{ background-position: center;
-  background-size: cover; }
-
-.prj-desc
-{ padding: 5vh 2.5vh; }
-
-.prj-desc1 
-{ width: 60%; }
-
-.prj-image1
-{ width: 30%;
-  background-image: url(../assets/projects/hotspot.JPG); 
-  background-position: right; }
-
-.prj-desc2 
-{ width: 70%;
-  text-align: center; }
-
-.prj-image2
-{ width: 30%;
-  background-image: url(../assets/projects/heprotech.JPG);
-  background-position: left; }
-
-.prj-image3
-{ width: 30%;
-  background-image: url(../assets/projects/digiexpress.jpg);
-  background-position: left; }
-
-.prj-box 
-{ box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.1);
-  background-color: #fff; }
+.btn-prj, .btn-prj:hover, .btn-prj:active
+{ background-color: #eee;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1); 
+  color: #555; 
+  border-radius: 0;
+  border: 0; }
 
 /** CONTACT **/
 #contact
