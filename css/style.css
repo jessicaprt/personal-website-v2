@@ -351,3 +351,19 @@ footer
 .blog-main #blog-image img
 { width: 60% }
 
+
+/** PROJECTS **/
+#selected-tags li
+{ display: inline;
+  padding: 3px 0px 3px 10px ;
+  color: #333; 
+  border-radius: 6px; 
+  background-color: #bcb8c7;
+  margin: 0 5px;}
+
+#selected-tags button
+{ color: #555;
+  margin-right: 5px;
+  background-color: #bcb8c7;
+  border: 0; }
+
