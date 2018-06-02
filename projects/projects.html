@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/icons/jess-icon.png">
 </head>
-<body>
+<body style="background-color: ">
     <nav class="navbar navbar-inverse navbar-default navbar-fixed-top shrink" id="navbar">
         <div class="navbar-header">
             <a class="navbar-brand scrollspy" href="../index.html"><img src="../assets/icons/jessica.png"></a>
@@ -34,22 +34,36 @@
     </div>
     </nav>
 	
-	<div class="filter-form">
-		<h1>Projects</h1>
-		<div class="container">
-			<script type="text/javascript" src="../js/projects.js"></script>
-			<p> filter results: 
-				<select id="projects-filter" onchange="if (this.selectedIndex) tagSelected(this.selectedIndex);">
-				</select>
-				<button>add</button>
-			</p>
-			<ul id="selected-tags">
-				<li class="hide"> </li>
-			</ul>
+	<div id="project-body">
+		<div class="filter-form">
+			<h1>Projects</h1>
+			<div class="container">
+				<script type="text/javascript" src="../js/projects.js"></script>
+				<p> filter results: 
+					<select id="projects-filter" onchange="if (this.selectedIndex) tagSelected(this.selectedIndex);">
+					</select>
+				</p>
+				<ul id="selected-tags">
+				</ul>
+			</div>
+			<hr/>
 		</div>
-		<hr/>
+		<div class="projects-main container row" id="projects-container">
+
+		</div>
 	</div>
-	<div class="projects-main container row" id="projects-container">
-		
-	</div>
+	<footer class="footer" id="contact">
+        <div class="links">
+            <ul class="icons">
+                <li><a href="#"><img src="../assets/icons/In-White-28px-R.png"></a></li>
+                <li><a href="https://github.com/jessicaprt" target="_blank"><img src="../assets/icons/github-6-xxl.png"></a></li>
+                <li><a href="mailto:jessicaprieto31@gmail.com"><img src="../assets/icons/ic_mail_outline.png"></a></li>
+            </ul>
+            <div class="email">
+                <p><strong>email:</strong> jessicaprieto31@gmail.com</p>
+            </div>
+            <hr>
+            <p>&copy; Jessica Prieto - 2018</p>
+        </div>
+    </footer>
 </body>

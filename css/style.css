@@ -233,7 +233,7 @@ nav.navbar.shrink
 { height: 24px; }
 
 footer 
-{ bottom: 0; }
+{ width: 100%; }
 
 /** DAILY **/
 .blogs 
@@ -353,6 +353,12 @@ footer
 
 
 /** PROJECTS **/
+#project-body 
+{ min-height: 100vh; }
+
+#project-body h1
+{ padding: 3vh 0; }
+
 .filter-form 
 { padding-top: 3vh; }
 
@@ -370,13 +376,23 @@ footer
   background-color: #bcb8c7;
   border: 0; }
 
+#projects-filter
+{ margin: 0 2vh;
+  border-radius: 4px;
+  padding: 2px 15px;  } 
+
 .projects-main
-{ margin: 0 auto; }
+{ margin: 4vh auto; }
+
+
+#projects-container .row
+{ padding: 3vh 0; 
+  border-bottom: 1px solid #eee; }
 
 .projects-main .contents
 { border: 10px solid #eee; 
   margin: 10px 5px; 
   padding: 15px; }
 
-.projects-main .contents img
+.projects-main .col-md-4 img
 { width: 90%; }

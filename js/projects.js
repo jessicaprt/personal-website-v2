@@ -57,6 +57,7 @@ function tagSelected(idx) {
 	selectedTags.push(allTags[idx-1]);
 	console.log(selectedTags);
 	filterProjects();
+	$("#projects-filter").val("default");
 }
 
 function setButtons(tags) {
@@ -101,8 +102,15 @@ function renderProjects() {
 		var imageLink = "images/" + projects[i]["image_link"];
 		var renderTitle = "<h3>" + projects[i]["name"] + "</h3>";
 		var renderDescription = "<p>" + projects[i]["description"] + "</p>";
-		var renderImage = "<center><img src=\"" + imageLink + "\"></center>";
-		$("#projects-container").append("<div class=\"col-md-4\" id=\"prj" + projId + "\"><div class=\"contents\">" + renderImage + renderTitle + "<hr />" + renderDescription + "</div></div>");
+		var renderImage = "<div class=\"col-md-4\"><img src=\"" + imageLink + "\"></div>";
+		
+		var renderGithub = "";
+		
+		if (projects[i]["github_link"] != null) {
+			renderGithub = "<a href=\"" + projects[i]["github_link"] + "\" target=\"_blank\"><img src=\"../assets/icons/github-logo.png\"></a>";
+		}
+		
+		$("#projects-container").append("<div class=\"row\" id=\"prj" + projId + "\">" + renderImage + "<div class=\"col-md-8\">" + renderTitle + renderDescription + renderGithub + "</div>");
 	});
 }
 
@@ -116,9 +124,9 @@ function filterProjects() {
 			var prj_tags = projects[i]["tags"];
 			
 			if (isInSelectedTags(prj_tags)) {
-				$(prj_id).removeClass("hidden");
+				$(prj_id).show(500);
 			} else {
-				$(prj_id).addClass("hidden");
+				$(prj_id).hide(500);
 			}
 		});
 	}
