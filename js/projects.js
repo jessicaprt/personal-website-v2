@@ -1,13 +1,18 @@
 var allTags = [];
 var selectedTags = [];
+var selectedProjects = [];
+var projects = [];
+var projectIds = [];
 
 $(document).ready(function(){
 	$.ajax(
 		{url: "projects.json", 
 			success: function(result){
 				var tags = getAllTags(result.projects);
+				projects = result.projects;
 				renderOptions(tags);
 				setButtons(tags);
+				renderProjects();
 			}
 	   });
 	var tagsSize = allTags.length;
@@ -33,7 +38,7 @@ function getAllTags(projects) {
 function renderOptions(tags) {
 	$("#projects-filter").append($('<option>', {
 					value: "default",
-					text: "all"
+					text: "- select filters -"
 			}));
 	$.each(tags, function(i) {
 		$("#projects-filter").append($('<option>', {
@@ -51,6 +56,7 @@ function tagSelected(idx) {
 	$(currentTag).removeClass("hidden");
 	selectedTags.push(allTags[idx-1]);
 	console.log(selectedTags);
+	filterProjects();
 }
 
 function setButtons(tags) {
@@ -63,8 +69,8 @@ function setButtons(tags) {
 			var idx = curr.substring(2,3);
 			var curr_list = "#list-" + curr;
 			$(curr_list).addClass("hidden");
-			
 			removeFromList(idx);
+			filterProjects();
 		});
 	});
 }
@@ -80,4 +86,51 @@ function removeFromList(idx) {
 	});
 	
 	console.log(selectedTags);
+}
+
+function removeProjects() {
+	$.each(projectIds, function(i) {
+		$(projectIds[i]).remove();
+	});
+}
+
+function renderProjects() {
+	$.each(projects, function(i) {
+		projectIds.push("#prj" + i);
+		var projId = projects[i]["id"];
+		var imageLink = "images/" + projects[i]["image_link"];
+		var renderTitle = "<h3>" + projects[i]["name"] + "</h3>";
+		var renderDescription = "<p>" + projects[i]["description"] + "</p>";
+		var renderImage = "<center><img src=\"" + imageLink + "\"></center>";
+		$("#projects-container").append("<div class=\"col-md-4\" id=\"prj" + projId + "\"><div class=\"contents\">" + renderImage + renderTitle + "<hr />" + renderDescription + "</div></div>");
+	});
+}
+
+function filterProjects() {
+	if (selectedTags.length == 0) {
+		removeProjects();
+		renderProjects();
+	} else {
+		$.each(projects, function(i) {
+			var prj_id = "#prj" + projects[i]["id"];
+			var prj_tags = projects[i]["tags"];
+			
+			if (isInSelectedTags(prj_tags)) {
+				$(prj_id).removeClass("hidden");
+			} else {
+				$(prj_id).addClass("hidden");
+			}
+		});
+	}
+}
+
+function isInSelectedTags(tags) {
+	var flag = false;
+	$.each(tags, function(i){
+		if (selectedTags.indexOf(tags[i]) >= 0) {
+			flag = true;
+			return true;
+		}
+	});
+	return flag;
 }

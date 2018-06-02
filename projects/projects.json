@@ -32,9 +32,9 @@
 			"id" : 3,
 			"name" : "HeproTech",
 			"description" : "a device for securing contents in a case where a user can enable \"secure mode\" and receives alerts via a notification on a monile phone if someone else comes close to the secure case. Hepro-tech was an entry to CalgaryHacks where we had 24 hours to complete the project.",
-			"github_link" : "heprotech.jpg",
+			"github_link" : "",
 			"tags" : ["android", "hardware"],
-			"image_link" : "",
+			"image_link" : "heprotech.JPG",
 			"featured_status" : null
 		}
 	]

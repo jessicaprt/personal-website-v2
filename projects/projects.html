@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/icons/jess-icon.png">
 </head>
@@ -35,20 +34,22 @@
     </div>
     </nav>
 	
-	<div class="projects-main">
+	<div class="filter-form">
 		<h1>Projects</h1>
-			<div class="container">
-				<script type="text/javascript" src="../js/projects.js"></script>
-				<p> filter results: 
-					<select id="projects-filter" onchange="if (this.selectedIndex) tagSelected(this.selectedIndex);">
-					</select>
-					<button>add</button>
-				</p>
-				<ul id="selected-tags">
-					<li class="hide"> </li>
-				</ul>
-			</div>
+		<div class="container">
+			<script type="text/javascript" src="../js/projects.js"></script>
+			<p> filter results: 
+				<select id="projects-filter" onchange="if (this.selectedIndex) tagSelected(this.selectedIndex);">
+				</select>
+				<button>add</button>
+			</p>
+			<ul id="selected-tags">
+				<li class="hide"> </li>
+			</ul>
 		</div>
 		<hr/>
+	</div>
+	<div class="projects-main container row" id="projects-container">
+		
 	</div>
 </body>

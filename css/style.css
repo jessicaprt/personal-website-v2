@@ -353,6 +353,9 @@ footer
 
 
 /** PROJECTS **/
+.filter-form 
+{ padding-top: 3vh; }
+
 #selected-tags li
 { display: inline;
   padding: 3px 0px 3px 10px ;
@@ -367,3 +370,13 @@ footer
   background-color: #bcb8c7;
   border: 0; }
 
+.projects-main
+{ margin: 0 auto; }
+
+.projects-main .contents
+{ border: 10px solid #eee; 
+  margin: 10px 5px; 
+  padding: 15px; }
+
+.projects-main .contents img
+{ width: 90%; }
