@@ -1,9 +1,4 @@
 $(document).ready(function(){
-//    $("#header-image").mouseover(function(){
-//		$(this).css(
-//		'background-image', 
-//		'url(\"../assets/header_style.jpg\")');
-//	});
 	
 	$("a").on('click', function(event) {
 		var valid_hashes = ["#about-me", "#projects", "#daily"];

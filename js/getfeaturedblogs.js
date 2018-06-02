@@ -22,10 +22,13 @@ function renderFeaturedBlogs(blogs) {
 			var content = blogs[idx]["body"].join(" ");
 			var renderContent = "<p>" + content.substring(0,240)+ "<a href=\"blogs/" + blogs[idx]["url"] + ".html\">...Read More</a></p>";
 			
-			$(blog_ids[i]).html(
-				renderTitle + 
+			var renderDescription = ("<div class=\"col-md-8\">" + renderTitle + 
 				renderDate + 
-				renderContent);
+				renderContent + "</div>");
+			
+			var renderImage = ("<div class=\"col-md-4\"><img src=\"blogs/images/" + blogs[idx]["blog_image"] + "\"></div>");
+			
+			$(blog_ids[i]).html(renderDescription + renderImage);
 		} else {
 			$(blog_ids[i]).addClass("hidden-content");
 		}

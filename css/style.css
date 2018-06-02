@@ -264,6 +264,9 @@ footer
   border-bottom: 1px solid rgba(48, 44, 58, 0.8); 
   padding: 2vh 0; }
 
+.featuredblogs img 
+{ width: 100% }
+
 .featuredblogs
 { padding: 0 10vw 0 10vw; }
 

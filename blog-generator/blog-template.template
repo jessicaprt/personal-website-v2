@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <title>First Blog</title>
+    <title>{0}</title>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>	
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
     </nav>
     <script type="text/javascript" src="../js/renderblog.js"></script>
     <div class="blog-main container">
-        <p class="hidden" id="url">first-blog</p>
+        <p class="hidden" id="url">{1}</p>
         <h1 id="blog-title"></h1>
         <p id="blog-date"></p>
         <div id="blog-image"></div>
